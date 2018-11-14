@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 把我们在应用程序中要使用的类的对象实例，配置进Spring的IOC的容器里 -->
+	
+	<!-- 让Spring在底层创建一个UserDao类型的对象，放到IOC的容器里等待java代码里使用 -->
+	<bean id="UserDao" class="top.study.spring.dao.UserDaoImpl"></bean>
+	
+	<!-- 让Spring在底层创建一个UserService类型的对象，放到IOC的容器里等待java代码里使用 -->
+	<!-- 创建这个对象的时候，把刚刚创建的UserDaoImpl类型对象注入(传递)到UserServiceImpl里的userdao属性值 -->
+	<bean id="UserService" class="top.study.spring.service.UserServiceImpl">
+		<property name="userdao" ref="UserDao"></property>
+	</bean>
+
+</beans>
