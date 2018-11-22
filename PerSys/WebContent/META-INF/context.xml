@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true" crossContext="true">
+<Resource
+name="jdbc/personnel" 
+auth="Container" 
+type="javax.sql.DataSource" 
+driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+url="jdbc:sqlserver://47.106.97.135:1433;databaseName=personnel"
+username="chuanchuan" 
+password="257173"
+maxActive="100"
+maxidle="30"
+maxWait="1000"/> 
+</Context>
+<!--  
+name数据源的名字，即JNDI共享资源的唯一名称
+auth表示操控者，Container表示由容器来创建数据源，Application表示由应用程序自己创建
+type表示数据源的类型
+maxActive="100" //最大活动连接数
+maxidle="30" //最大空闲连接数
+maxWait="1000" //最大等待连接时间（毫秒)
+-->

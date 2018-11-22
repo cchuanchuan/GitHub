@@ -1,0 +1,248 @@
+html, body{
+	position:absolute;
+    height:100%;
+    width:100%;
+ 	margin:0;
+ 	padding:0;
+    background: #fff;
+    font-family:"Î¢ÈíÑÅºÚ",MicrosoftYaHei;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;	
+}
+html{color:#333;background:#FFF;} 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form, 
+fieldset,input,textarea,p,blockquote,th,td { 
+margin:0; 
+padding:0; 
+} 
+table { 
+border-collapse:collapse; 
+border-spacing:0; 
+} 
+fieldset,img { 
+border:0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+font-style:normal; 
+font-weight:normal; 
+} 
+ol,ul { 
+list-style:none; 
+} 
+caption,th { 
+text-align:left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+font-size:100%; 
+font-weight:normal; 
+} 
+q:before,q:after { 
+content:''; 
+} 
+abbr,acronym { border:0; 
+}
+ul{
+	list-style:none;
+}
+.fr{
+	float:right;
+}
+.fl{
+	float:left;
+}
+a:visit, a:active, a:hover{
+	text-decoration:none;
+}
+a {
+    background-color:none;
+    text-decoration: none;
+}
+.page-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding:0;
+}
+
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height:100%;
+    float: left;
+    width: 240px;
+    background-color:#b52e31;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(58, 41, 31);
+    z-index: 999;
+}
+
+.usermessage{
+	margin-top:0.5rem;
+	color: #fff;
+	font-size:1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px ridge rgba(255, 255, 255, 0.15);
+  padding: 0;
+}
+#menu li a {
+	font-style: normal;
+    position: relative;
+    display: block;
+    padding:1rem 2rem 1rem 2rem;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 2;
+    background-color: #b52e31;
+    font-size:1rem;
+    font-family: 'Roboto', sans-serif;
+}
+#menu li a:hover {
+  color: #ffffff;
+  background-color:#252525;
+  border-left: 0.4rem solid #4A4A4A;
+}
+#menu li.focus a {
+  background-color: #2b303a;
+  color: #ffffff;
+}
+#menu li.focus ul.menusub a{
+	background-color:#b52e31;
+}
+.focus ul li {
+  background-color: #B52E31;
+}
+#menu ul li {
+  background-color: #B52E31;
+}
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li ul {
+  position: absolute;
+  visibility: hidden;
+  left:100%;
+  top:-0.1rem;
+  background-color: #2b303a;
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.5);
+  border-top: 0.1rem solid rgba(69, 74, 84, 0.7);
+}
+/*ÏÔÊ¾×Ó²Ëµ¥*/
+#menu li:hover ul {
+  visibility: visible;
+}
+
+.right-content {
+    position:relative;
+    left:0;
+    right:0;
+    top:0;
+    width:auto;
+    height:100%;
+    margin-left:240px;
+}
+.top-menu{
+	position: relative;
+    height:50px;
+    line-height:50px;
+    background: #252525;
+}
+.top_right{
+	float:right;
+	color: #ffffff;
+}
+.top_right ul{
+	list-style:none;
+	text-transform: uppercase;
+	margin-right:1.5rem;
+}
+
+.top_left{
+	margin:0;
+	float:left;
+	color: #ffffff;
+}
+.top_left ul{
+	list-style:none;
+	padding-left:1rem;
+}
+.top_left ul li{
+	display: inline-block;
+	margin-right: 0.6rem;
+}
+.top_left ul li:last-child{
+	margin-right: 0;
+}
+.top_left ul li a{
+	text-align:center;
+	padding: 0rem 0.2rem 0 0.2rem;
+	text-transform:uppercase;
+	font-size:1rem;
+	color:#ffffff;
+}
+.top_left ul li a:hover{
+	color:#ff6978;
+}
+
+.maincontent{
+	position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    width: auto;
+    height:100%;
+    background-color:#fff;
+}
+.tablename{
+	padding:1.6rem;
+	box-sizing:border-box;
+	line-height:1.6rem;
+}
+.tablename strong{
+	font-size:1.8rem;
+	color:#0e90d2;
+	font-weight:700;
+}
+.table{
+	padding:0 1rem 0 1rem;
+	margin:0;
+	width:auto;
+	display:table;
+}
+.table table{
+	padding:0.5rem;
+	border-collapse:collapse;
+}
+table th{
+	padding:0.5rem;
+}
+table td{
+	padding:0.5rem;
+}
+
+footer{
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	text-align:center;
+	font-size:0.8rem;
+}
